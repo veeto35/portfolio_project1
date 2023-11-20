@@ -8,10 +8,10 @@ const Features = () => {
       <div className='max-container padding-container relative w-full flex justify-end'>
       <div className='flex flex-1 lg:min-h-[900px]'>
         <Image
-          src="/phone.svg"
+          src="/phone.png"
           alt="phone"
-          height={440}
-          width={1000}
+          width={440}
+          height={1000}
           className='feature-phone'       
         />
       </div>
@@ -27,10 +27,10 @@ const Features = () => {
         <ul className='mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-20'>
           {FEATURES.map((feature) => (
             <FeaturesItem 
-            key={feature.title}
-            icon={feature.icon}
-            description={feature.description}
-            title={feature.title}/>
+              key={feature.title}
+              icon={feature.icon}
+              description={feature.description}
+              title={feature.title}             />
             ))}
         </ul>
       </div>
@@ -43,7 +43,6 @@ const Features = () => {
 type FeatureItem = {
   title:string;
   icon:string;
-  variant: string;
   description: string;
 }
 
